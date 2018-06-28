@@ -8,10 +8,14 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContainerComponent } from './container/container.component';
 import { CpaCollegeComponent } from './container/cpa-college/cpa-college.component';
+import { UtilsComponent } from './container/utils/utils.component';
 
 const appRoute :Routes=[
   {
     path:'cpa-college', component:CpaCollegeComponent,
+  },
+  {
+    path:'utils', component:UtilsComponent,
   },
   {
     path:'', redirectTo:'/cpa-college', pathMatch:'full'
@@ -28,6 +32,7 @@ const appRoute :Routes=[
     FooterComponent,
     ContainerComponent,
     CpaCollegeComponent,
+    UtilsComponent,
   ],
   imports: [
     BrowserModule,
