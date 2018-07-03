@@ -1,0 +1,21 @@
+@import './../../assets/scss/variables';
+
+
+div.bm{
+    background: $secondary-color;
+    margin: auto;
+    display:table;
+    width:100%; 
+       cpa-left-nav{
+           display: table-cell;
+           background: $secondary-color;
+           padding: 0.2em;
+           width:10%;
+}
+    router-outle{
+        display: table-cell;
+        width:90%;
+        margin: auto;
+        padding: 0.2em;
+    }
+}

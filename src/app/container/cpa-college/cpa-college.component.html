@@ -1,1 +1,29 @@
-This is cpa college component
+    <h1>
+        List of Course <button (click)="addCourse()">Add</button>
+    </h1>
+
+    <div class="user-data">
+            <div class="card" *ngFor="let course of cpaCollegeList">
+                <div class="header">
+                    <h3>{{course.courseName}}</h3>
+                </div>
+                <div class="content">
+                    <div class="description">
+                        <label class="name">ID</label>
+                        <label class="value">{{course.id}}</label>
+                    </div>
+        
+                    <div class="description">
+                        <label class="name">Duration</label>
+                        <label class="value">{{course.duration}}</label>
+                    </div>
+        
+                    <div class="description">
+                        <label class="name">Fee</label>
+                        <label class="value">{{course.fee}}</label>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        

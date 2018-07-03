@@ -1,0 +1,24 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/font';
+nav
+{
+    margin: 0em;
+    padding: 0em;    
+    ul{
+        list-style: none;
+        padding: 0.2em;
+        li{
+            margin: 0.2em;
+            width: 10em;
+            background: $primary-color;
+            border-left: 5px solid $primary-color;
+            padding: 0.2em;
+            &:hover
+            {
+            background:lightgray;
+            color:black;
+            border-left: 5px solid $secondary-color;
+            }
+        }
+    }
+}

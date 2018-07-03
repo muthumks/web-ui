@@ -1,0 +1,10 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/font';
+
+/******** Footer Style ********/
+footer{
+    margin: auto;
+    text-align: center;
+    padding: 10vh;
+    background: $primary-color;
+}
