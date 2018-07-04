@@ -21,8 +21,19 @@ addCourse(){
 
 }
 getCpaCollegeList(){
-  this.cpaCollegeService.getCpaCollegeList().subscribe((cpaCollegeResponse:Array<CpaCollege>)=>{
+  this.cpaCollegeService.getCpaCollegeList().subscribe(
+    //success
+    (cpaCollegeResponse:Array<CpaCollege>)=>{
     this.cpaCollegeList = cpaCollegeResponse ? cpaCollegeResponse["cpaCollege"]: [];
-  });
+  },
+  //error
+  (error) =>{
+    console.log(error)
+  },
+  //final
+  () =>{
+    console.log('Finally')
+  }
+);
 }
 }

@@ -16,8 +16,9 @@
             }
         }
         .content{
-            border: 1px solid $shadow-color;
+            border-top: 2px solid $shadow-color;
             .description{
+                clear:both;
                 label{
                     width: 45%;
                     float: left;
