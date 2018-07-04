@@ -1,0 +1,58 @@
+{
+    "cpaCollege":[
+        {
+            "id": 1,
+            "courseName": "BCA",
+            "duration": "3 yr",
+            "fee": 30000
+        },
+        {
+            "id": 2,
+            "courseName": "B.Com",
+            "duration": "3 yr",
+            "fee": 20000
+        },
+        {
+            "id": 3,
+            "courseName": "BA",
+            "duration": "3",
+            "fee": 15000
+        },
+        {
+            "id": 4,
+            "courseName": "Bsc-Math",
+            "duration": "3",
+            "fee": 35000
+        },
+        {
+            "id": 5,
+            "courseName": "Bsc-CS",
+            "duration": "3",
+            "fee": 35000
+        },
+        {
+            "id": 6,
+            "courseName": "PGDCA",
+            "duration": "2",
+            "fee": 20000
+        },
+        {
+            "id": 7,
+            "courseName": "M.Com",
+            "duration": "2",
+            "fee": 35000
+        },
+        {
+            "id": 8,
+            "courseName": "MBA",
+            "duration": "2",
+            "fee": 40000
+        },
+        {
+            "id": 9,
+            "courseName": "MCA",
+            "duration": "2",
+            "fee": 100000
+        }
+    ]
+}
