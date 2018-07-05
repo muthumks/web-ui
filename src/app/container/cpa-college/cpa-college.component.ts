@@ -11,20 +11,28 @@ import { CpaCollege } from './cpaCollege';
 })
 export class CpaCollegeComponent implements OnInit {
 cpaCollegeList:Array<CpaCollege> = new Array<CpaCollege>();
-
+heroInput:any = "";
   constructor(public cpaCollegeService:CpaCollegeService) { }
 
   ngOnInit() {
-  this.getCpaCollegeList();
+  this.getCpaCollege();
   }
 addCourse(){
-
+let cpaCollege = new CpaCollege();
+cpaCollege.id = 10;
+this.cpaCollegeList.push(cpaCollege);
+this.cpaCollegeService.getCpaCollegeList().subscribe((cpaCollegeResponse:Array<CpaCollege>)=>{
+  console.log(cpaCollegeResponse);
 }
-getCpaCollegeList(){
-  this.cpaCollegeService.getCpaCollegeList().subscribe(
+
+)
+}
+getCpaCollege(){
+  this.cpaCollegeService.getCpaCollege().subscribe(
     //success
     (cpaCollegeResponse:Array<CpaCollege>)=>{
     this.cpaCollegeList = cpaCollegeResponse ? cpaCollegeResponse["cpaCollege"]: [];
+    this.cpaCollegeService.setCpaCollegeList(this.cpaCollegeList);
   },
   //error
   (error) =>{

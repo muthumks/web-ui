@@ -15,6 +15,7 @@ import { CollegeEventComponent } from './container/college-event/college-event.c
 import { CollegeEventSponsorshipComponent } from './container/college-event-sponsorship/college-event-sponsorship.component';
 import { CpaCollegeService } from './service/cpa-college.service';
 import { CpaProfessorComponent } from './container/cpa-professor/cpa-professor.component';
+import { CardComponent } from './container/cpa-college/card/card.component';
 
 const appRoute :Routes=[
   {
@@ -52,6 +53,7 @@ const appRoute :Routes=[
     CollegeEventComponent,
     CollegeEventSponsorshipComponent,
     CpaProfessorComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
